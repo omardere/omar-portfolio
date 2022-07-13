@@ -1,0 +1,169 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Pacifico&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Pacifico&family=Roboto:ital,wght@1,300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Pacifico&family=Roboto&display=swap');
+ 
+ body{
+    background-image: url('/image/back.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.top {
+    background-color: rgb(39, 35, 35);
+    overflow: hidden;
+    position: fixed;
+    top: -10px;
+    left: -10px;
+    padding-left:35% ;
+    width: 100%;
+  }
+  .top a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .top a:hover {
+    background-color: rgb(240, 228, 228);
+    color: black;
+  }
+  .top a:active {
+    background-color: #208b2f;
+    color: white;
+  }
+  .home header{
+position: relative;
+margin-top: 7%;
+color: aliceblue;
+font-weight: 100;
+font-family: sans-serif;
+text-align: center;
+font-family: 'Akaya Telivigala', cursive;
+font-family: 'Pacifico', cursive;
+
+  }
+  .home header h1{
+    line-height: 2;
+    letter-spacing: 0.700em;
+  }
+  .home header h2{
+    letter-spacing: 0.250em;
+  }
+  .my_img img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.my_img{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.my_img figcaption{
+    margin-left:70px;
+    font-family: 'Akaya Telivigala', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    padding: 30px;
+}
+.about{
+    position: relative;
+    top: 50px;
+}
+.about header h1{
+    color: aliceblue;
+    font-weight: bold;
+    display:inline-block;
+    border-bottom:4px solid rgb(104, 100, 100);
+    padding-bottom:2px;
+    margin-left: 47%;
+}
+.about article{
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Akaya Telivigala', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Roboto', sans-serif;
+position: relative;
+top: 5%;
+left: 40%;
+line-height: 1.5;
+width: 300px ;
+text-align: justify;
+}
+.both{
+    margin-left: 38%;
+
+}
+.both .icon{
+    position: relative;
+    background-color: white;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: rgb(54, 53, 53);
+  }
+  .both .site {
+    position: absolute;
+    top: 0;
+    line-height: 1.5;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #ffffff;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .both .icon:hover .site {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+ 
+  .both .facebook:hover,
+  .both .facebook:hover .site,
+  .both .facebook:hover .site::before {
+    background-color: #3b5999;
+    color: #ffffff;
+  }
+  .both .twitter:hover,
+  .both .twitter:hover .site,
+  .both .twitter:hover .site::before {
+    background-color: #46c1f6;
+    color: #ffffff;
+  }
+  .both .instagram:hover,
+  .both .instagram:hover .site,
+  .both .instagram:hover .site::before {
+    background-color: #e1306c;
+    color: #ffffff;
+  }
+  .both .github:hover,
+  .both .github:hover .site,
+  .both .github:hover .site::before {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  .both .youtube:hover,
+  .both .youtube:hover .site,
+  .both .youtube:hover .site::before {
+    background-color: #de463b;
+    color: #ffffff;
+  }
+  .both span{
+    position: relative;
+    left: 15px;
+  }
+ 
