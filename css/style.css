@@ -129,12 +129,13 @@ text-align: justify;
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    padding: 5px;
   }
    .icon:hover .site {
     top: -45px;
     opacity: 1;
     visibility: visible;
-    pointer-events: auto;
+    pointer-events: auto;   
   }
  
   .both .facebook:hover,
@@ -169,7 +170,7 @@ text-align: justify;
   }
   .both span{
     position: relative;
-    left: 15px;
+    left: 28%;
   }
   .web{
     position: relative;
@@ -212,8 +213,10 @@ text-align: justify;
     color: #ffffff;
   }
   .git{
-    margin-top: 5px;
-    margin-left: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
   }
   .grad1{
     display: flex;
