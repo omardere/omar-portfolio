@@ -8,17 +8,34 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-.top {
+.top-nav {
     background-color: rgb(39, 35, 35);
     overflow: hidden;
     position: fixed;
-    top: -10px;
-    left: -10px;
-    padding-left:40% ;
+    top: 0px;
+    left: 0px;
     width: 100%;
     height: 60px;
+    display: flex;
+    justify-content: center;
   }
-  .top a {
+  @media only screen and (max-width: 600px) {
+    .top-nav {
+max-width: 600px;   
+ }
+ .top-nav a {
+  padding: 14px 10px;
+}
+.projects{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 50%;
+}
+
+  }
+  .top-nav a {
     float: left;
     color: white;
     text-align: center;
@@ -28,24 +45,23 @@
     height: 100%;
     margin-top: 10px;
   }
-  .top a:hover {
+  .top-nav a:hover {
     background-color: rgb(240, 228, 228);
     color: black;
   }
-  .top a:active {
+  .top-nav a:active {
     background-color: #208b2f;
     color: white;
   }
+
   .home header{
-position: relative;
-margin-top: 7%;
+margin-top: 100px;
 color: aliceblue;
 font-weight: 100;
 font-family: sans-serif;
 text-align: center;
 font-family: 'Akaya Telivigala', cursive;
 font-family: 'Pacifico', cursive;
-
   }
   .home header h1{
     line-height: 2;
@@ -66,16 +82,15 @@ font-family: 'Pacifico', cursive;
     align-items: center;
 }
 .my_img figcaption{
-    margin-left:70px;
     font-family: 'Akaya Telivigala', cursive;
     font-family: 'Pacifico', cursive;
     font-family: 'Roboto', sans-serif;
     color: aliceblue;
-    padding: 30px;
+    text-align: center;
+    padding-top: 15px ;
 }
 .about{
-    position: relative;
-    top: 50px;
+  margin-top: 60px;
 }
 .about header h1{
     color: aliceblue;
@@ -91,36 +106,42 @@ font-family: 'Pacifico', cursive;
     font-family: 'Akaya Telivigala', cursive;
 font-family: 'Pacifico', cursive;
 font-family: 'Roboto', sans-serif;
-position: relative;
-top: 5%;
-left: 40%;
+margin-left: 40%;
 line-height: 1.5;
-width: 300px ;
+max-width: 300px ;
 text-align: justify;
 }
-.both{
-    margin-left: 38%;
-    position: fixed;
-    bottom: 0;
-
+.social-media{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
 }
  .icon{
-    position: relative;
     background-color: white;
     border-radius: 50%;
     margin: 10px;
     width: 50px;
     height: 50px;
-    line-height: 50px;
+    /* line-height: 50px; */
     font-size: 22px;
-    display: inline-block;
     cursor: pointer;
     transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     color: rgb(54, 53, 53);
+    display: flex;
   }
+  .logo{
+     justify-self: center;
+    position: relative;
+    margin-top: 25%;
+    margin-left: 25%; 
+  }
+  .fa-facebook-f{
+    margin-left: 30%;
+  }
+ 
    .site {
     position: absolute;
-    top: 0;
+    margin-top:-40px;
     line-height: 1.5;
     font-size: 14px;
     background-color: #ffffff;
@@ -132,49 +153,44 @@ text-align: justify;
     padding: 5px;
   }
    .icon:hover .site {
-    top: -45px;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;   
   }
  
-  .both .facebook:hover,
-  .both .facebook:hover .site,
-  .both .facebook:hover .site::before {
+  .social-media .facebook:hover,
+  .social-media .facebook:hover .site,
+  .social-media .facebook:hover .site::before {
     background-color: #3b5999;
     color: #ffffff;
   }
-  .both .twitter:hover,
-  .both .twitter:hover .site,
-  .both .twitter:hover .site::before {
+  .social-media .twitter:hover,
+  .social-media .twitter:hover .site,
+  .social-media .twitter:hover .site::before {
     background-color: #46c1f6;
     color: #ffffff;
   }
-  .both .instagram:hover,
-  .both .instagram:hover .site,
-  .both .instagram:hover .site::before {
+  .social-media .instagram:hover,
+  .social-media .instagram:hover .site,
+  .social-media .instagram:hover .site::before {
     background-color: #e1306c;
     color: #ffffff;
   }
-  .both .github:hover,
-  .both .github:hover .site,
-  .both .github:hover .site::before {
+  .social-media .github:hover,
+  .social-media .github:hover .site,
+  .social-media .github:hover .site::before {
     background-color: #333333;
     color: #ffffff;
   }
-  .both .youtube:hover,
-  .both .youtube:hover .site,
-  .both .youtube:hover .site::before {
+  .social-media .youtube:hover,
+  .social-media .youtube:hover .site,
+  .social-media .youtube:hover .site::before {
     background-color: #de463b;
     color: #ffffff;
   }
-  .both span{
-    position: relative;
-    left: 28%;
-  }
-  .web{
-    position: relative;
-    top: 70px;
+ 
+  .web header{
+    margin-top: 70px;
 }
 .web header h1{
     color: aliceblue;
@@ -190,7 +206,7 @@ text-align: justify;
     width: 200px;
     height: 200px;
 }
-.proj figcaption{
+.projects figcaption{
   color:white;
   margin-left:60px;
   font-family: 'Akaya Telivigala', cursive;
@@ -198,17 +214,20 @@ text-align: justify;
   font-family: 'Roboto', sans-serif;
   color: aliceblue;
   padding: 20px;
+  max-width: 300px;
+  overflow: hidden;
+  max-height: 90px;
+  text-align: justify;
   line-height: 1.5;
 }
-.proj{
+.projects{
   margin-top: 50px;
   display: flex;
-  align-items: center;
-  margin-left: -70px;
+  justify-items: center;
 }
-.proj .github:hover,
-  .proj .github:hover .site,
-  .proj .github:hover .site::before {
+.projects .github:hover,
+  .projects .github:hover .site,
+  .projects .github:hover .site::before {
     background-color: #333333;
     color: #ffffff;
   }
@@ -221,51 +240,46 @@ text-align: justify;
   .grad1{
     display: flex;
     flex-direction: column;
-    width: 35%;
+    max-width: 33%;
     align-items: center;
-    margin-left: 200px;
     height: 400px;
-
   }
   .soft{
     display: flex;
     flex-direction: column;
-    width: 35%;
+    max-width: 33%;
     align-items: center;
     height: 400px;
-
   }
   .db{
     display: flex;
     flex-direction: column;
-    width: 35%;
+    max-width: 33%;
     align-items: center;
     height: 400px;
+    padding-left: 50px;
   }
+ 
   .resume h1{
     color: aliceblue;
     letter-spacing: 0.85rem;
     font-weight: bold;
-    display:inline-block;
-
-    margin-left: 44%;
-    margin-top: 5%;
+    text-align: center;
+    margin-top: 90px;
     font-family: 'Akaya Telivigala', cursive;
     font-family: 'Pacifico', cursive;
     font-family: 'Roboto', sans-serif;
   }
  
   .resume article{
+    z-index: -1;
     color: aliceblue;
-    text-align: center;
     font-family: 'Akaya Telivigala', cursive;
 font-family: 'Pacifico', cursive;
 font-family: 'Roboto', sans-serif;
-position: relative;
-top: 5%;
-left: 40%;
+margin-left: 40%;
 line-height: 1.5;
-width: 300px ;
+max-width: 300px ;
 text-align: justify;
 }
 .resume h2{
@@ -281,7 +295,6 @@ text-align: justify;
   font-family: 'Roboto', sans-serif;
 }
 .edu{
-  margin-top: -15px;
   color: aliceblue;
   font-family: 'Akaya Telivigala', cursive;
   font-family: 'Pacifico', cursive;
