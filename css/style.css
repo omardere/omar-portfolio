@@ -20,6 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
   }
   @media only screen and (max-width: 600px) {
     .top-nav {
@@ -49,13 +50,12 @@ max-width: 600px;
     text-decoration: none;
     font-size: 17px;
   }
-  .top-nav a:hover {
+  .top-nav a:hover,a.selected {
     background-color: rgb(240, 228, 228);
     color: black;
   }
   .top-nav a:active {
-    background-color: #208b2f;
-    color: white;
+    background-color: gray;
   }
  .home{
   margin: auto;
@@ -107,7 +107,7 @@ font-family: 'Pacifico', cursive;
     border-bottom:4px solid rgb(104, 100, 100);
     padding-bottom:2px;
 }
-.about article{
+.about .about-me{
   margin: auto;
     color: aliceblue;
     text-align: center;
@@ -208,13 +208,13 @@ text-align: justify;
     padding-bottom:8px;
     
 }
-.p1{
+.projects-image{
   border-radius: 50%;
     width: 200px;
     height: 200px;
     object-fit: cover;
 }
-.projects figcaption{
+.projects-item figcaption{
   color:white;
   margin-left:60px;
   font-family: 'Akaya Telivigala', cursive;
@@ -232,8 +232,10 @@ text-align: justify;
   margin-top: 50px;
   display: flex;
   justify-items: center;
+  margin-left: 0;
+  margin-right: 0;
 }
-.projects div{
+.projects figure{
   flex: 1;
 }
 .projects .github:hover,
@@ -248,24 +250,13 @@ text-align: justify;
     left: 50%;
     transform: translate(-50%, -50%)
   }
-  .grad1{
+  .projects-item{
     display: flex;
     flex-direction: column;
     align-items: center;
     height: auto;
   }
-  .soft{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-  }
-  .db{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-  }
+ 
  
   .resume h1{
     color: aliceblue;
@@ -277,7 +268,7 @@ text-align: justify;
     font-family: 'Roboto', sans-serif;
   }
 
-  .resume article{
+  .education,.skills{
     margin: auto;
     padding: 10px;
     color: aliceblue;
