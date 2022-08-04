@@ -23,8 +23,14 @@
     z-index: 100;
   }
   @media only screen and (max-width: 600px) {
+    body{
+ min-height: 1200px;
+    }
     .top-nav {
 max-width: 600px;   
+ }
+ .projects-item figcaption{
+  max-width: 50px;
  }
  .top-nav a {
   padding: 14px 10px;
@@ -224,7 +230,7 @@ text-align: justify;
   padding: 20px;
   max-width: 300px;
   overflow: hidden;
-  max-height: 150px;
+  max-height: 90px;
   text-align: justify;
   line-height: 1.5;
 }
