@@ -4,7 +4,7 @@
  @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Pacifico&family=Roboto&display=swap');
  
  body{
-    background-image: url('/image/back.jpeg');
+    background-image: url('back.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -23,8 +23,16 @@
     z-index: 100;
   }
   @media only screen and (max-width: 600px) {
+    body{
+ min-height: 1200px;
+    }
     .top-nav {
 max-width: 600px;   
+ }
+ .projects-item figcaption{
+  max-width: 50px;
+  text-align: center;
+
  }
  .top-nav a {
   padding: 14px 10px;
@@ -224,7 +232,7 @@ text-align: justify;
   padding: 20px;
   max-width: 300px;
   overflow: hidden;
-  max-height: 90px;
+  max-height: 100px;
   text-align: justify;
   line-height: 1.5;
 }
