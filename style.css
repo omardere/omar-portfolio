@@ -8,7 +8,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
-   padding: 0;
+    padding: 0;
+    height: 100%;
+
   }
 .top-nav {
     background-color: rgb(39, 35, 35);
@@ -224,7 +226,6 @@ text-align: justify;
 }
 .projects-item figcaption{
   color:white;
-  margin-left:60px;
   font-family: 'Akaya Telivigala', cursive;
   font-family: 'Pacifico', cursive;
   font-family: 'Roboto', sans-serif;
@@ -245,6 +246,7 @@ text-align: justify;
 }
 .projects figure{
   flex: 1;
+  margin: 0;
 }
 .projects .github:hover,
   .projects .github:hover .site,
